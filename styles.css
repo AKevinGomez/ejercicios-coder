@@ -41,7 +41,6 @@ body,html {
         font-size: 0.8em;
         margin: 2% 10%;
     }
-    
 }
 
 @media (max-width: 425px){
@@ -88,9 +87,11 @@ body,html {
         font-size: 1.5em !important;
     }
     .grilla input, .grilla select {
-    width: 80%;
-}
-
+        width: 80%;
+    }
+    section p {
+        font-size: 1.4em;
+    }
 }
 
 .fondo-body {
@@ -275,7 +276,7 @@ form label{
 /* PAGES */
 
 .tit-desc {
-    height: 250px;
+    height: 350px;
     width: 70%;
     display: flex;
     flex-direction: column;
