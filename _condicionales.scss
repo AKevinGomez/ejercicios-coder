@@ -1,0 +1,24 @@
+@use 'variables';
+@use 'mixins';
+
+@if variables.$theme-change == "light" {
+    .primary-color-box{
+        @include mixins.box-color( white, variables.$primary-color-box)
+    }
+    .secondary-color-box{
+        @include mixins.box-color( white, variables.$secondary-color-box)
+    }
+    .tertiary-color-box{
+        @include mixins.box-color( white, variables.$tertiary-color-box)
+    }
+}@else if variables.$theme-change == "dark" {
+    .primary-color-box{
+        @include mixins.box-color( black, variables.$transparent-white)
+    }
+    .secondary-color-box{
+        @include mixins.box-color( black, variables.$transparent-white)
+    }
+    .tertiary-color-box{
+        @include mixins.box-color( black, variables.$transparent-white)
+    }
+}

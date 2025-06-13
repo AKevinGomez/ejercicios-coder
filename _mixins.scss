@@ -1,0 +1,6 @@
+@use 'variables';
+
+@mixin box-color($color, $bg-color){
+    color: $color;
+    background-color: $bg-color;
+}
