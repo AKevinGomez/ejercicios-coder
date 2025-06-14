@@ -49,6 +49,11 @@
   height: 60px;
   font-size: 20px;
   border-radius: 50px;
+  transition: transform 0.3s ease;
+}
+
+.card-btn:hover, .accept-btn:hover {
+  transform: scale(1.06);
 }
 
 .accept-btn {
