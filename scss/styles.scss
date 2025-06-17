@@ -1,7 +1,6 @@
-@use 'condicionales';
-@use 'mixins';
 @use 'variables';
-
+@use 'mixins';
+@use 'condicionales';
 
 // IDENTACIONES
 
@@ -55,6 +54,8 @@
     margin: auto;
 }
 
+// HASTA ACA son las implementaciones con scss.
+
 // styles.css
 
 * {
@@ -75,80 +76,7 @@ body,html {
     overflow-x: hidden;
 }
 
-/* media query tablet */
-@media (max-width: 991px) {
 
-    header,main,footer {
-        padding: 10px;
-        font-size: 1.3em;
-    }
-    .cards-section .card-container {
-        width: 85%;
-        font-size: 1em;
-    }
-    .card-buttons .card-btn {
-        width: 100%;
-        gap: 5px;
-    }
-    .logos-container {
-        width: 126px;
-        height: 270px;
-    }
-    .form-desc-container .form-container {
-        font-size: 0.8em;
-        margin: 2% 10%;
-    }
-}
-@media (max-width: 425px){
-    header,main {
-        padding: 10px;
-        font-size: 0.7em;
-    }
-    footer {
-        font-size: 1em !important;
-    }
-    section h2 {
-        font-size: 2.4em !important;
-    }
-    .cards-section .card-container {
-        width: 90%;
-        padding-bottom: 10px;
-    }
-    .card-container .card-fdp{
-        width: 150px;
-        height: 150px;
-    }
-    .card-credentials .card-bio {
-        font-size: 1.4em;
-    }
-    .card-container .card-credentials, .card-container .card-buttons{
-        width: 80%;
-        margin: 2% auto;
-    }
-    .card-buttons .card-btn {
-        width: 90%;
-    }
-    .logos-container .logos {
-        width: 40px;
-    }
-    div .brand-desc{
-        font-size: 0.7em;
-    }
-    .form-desc-container .form-container {
-        font-size: 1.5em;
-        margin: 2% 2%;
-    }
-    .form-container .text-borderline {
-        width: 90%;
-        font-size: 1.5em !important;
-    }
-    .grilla input, .grilla select {
-        width: 80%;
-    }
-    section p {
-        font-size: 1.4em;
-    }
-}
 .fondo-body {
     width: 100%;
     height: 110vh;
@@ -343,4 +271,78 @@ form label{
     flex-direction: column;
     justify-content: space-evenly;
     gap: 20px;
+}
+
+@media (max-width: 991px) {
+
+    header,main,footer {
+        padding: 10px;
+        font-size: 1.3em;
+    }
+    .cards-section .card-container {
+        width: 85%;
+        font-size: 1em;
+    }
+    .card-buttons .card-btn {
+        width: 100%;
+        gap: 5px;
+    }
+    .logos-container {
+        width: 126px;
+        height: 270px;
+    }
+    .form-desc-container .form-container {
+        font-size: 0.8em;
+        margin: 2% 10%;
+    }
+}
+@media (max-width: 425px){
+    header,main {
+        padding: 10px;
+        font-size: 0.7em;
+    }
+    footer {
+        font-size: 1em !important;
+    }
+    section h2 {
+        font-size: 2.4em !important;
+    }
+    .cards-section .card-container {
+        width: 90%;
+        padding-bottom: 10px;
+    }
+    .card-container .card-fdp{
+        width: 150px;
+        height: 150px;
+    }
+    .card-credentials .card-bio {
+        font-size: 1.4em;
+    }
+    .card-container .card-credentials, .card-container .card-buttons{
+        width: 80%;
+        margin: 2% auto;
+    }
+    .card-buttons .card-btn {
+        width: 90%;
+    }
+    .logos-container .logos {
+        width: 40px;
+    }
+    div .brand-desc{
+        font-size: 0.7em;
+    }
+    .form-desc-container .form-container {
+        font-size: 1.5em;
+        margin: 2% 2%;
+    }
+    .form-container .text-borderline {
+        width: 90%;
+        font-size: 1.5em !important;
+    }
+    .grilla input, .grilla select {
+        width: 80%;
+    }
+    section p {
+        font-size: 1.4em;
+    }
 }
