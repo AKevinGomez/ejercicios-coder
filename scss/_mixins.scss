@@ -1,6 +1,9 @@
 @use 'variables';
-
+// MIXIN utilizado en "preguntas-frecuentes.html"
 @mixin box-color($color, $bg-color){
     color: $color;
     background-color: $bg-color;
 }
+// MIXIN utilizado en "preguntas-frecuentes.html"
+
+// en "_variables" se encuentra la variable $theme-change que su valor alterna los colores de los box. En "_condicionales" se especifica que comportamientos tendria segun el valor de $theme-change.

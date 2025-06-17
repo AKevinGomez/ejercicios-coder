@@ -26,8 +26,8 @@
     }
 }
 
-// BOTONES
-
+// BOTONES con SCSS
+//botones en las card de "buscar-usuarios.html"
 .primary-button {
     background-color: variables.$primary-color;
     color: white;
@@ -36,7 +36,7 @@
 .secondary-button {
     background-color: variables.$secondary-color;
 }
-
+// ANIMACIONES en botones de las cards("buscar_usuarios.html")
 .card-btn {
     width: 49.4%;
     height: 60px;
@@ -48,13 +48,14 @@
 .card-btn:hover {
     transform: scale(1.06);
 }
+//botones en las card de "buscar-usuarios.html"
 
+// boton de ACEPTAR (desactivado) en "terminos-y-condiciones"
 .accept-btn {
     @extend .card-btn;
     margin: auto;
 }
-
-// HASTA ACA son las implementaciones con scss.
+// boton de ACEPTAR (desactivado) en "terminos-y-condiciones"
 
 // styles.css
 
